@@ -1,4 +1,4 @@
-generals-fog-memoriser
+generals-fog-memory
 =========
 
 A Chrome plugin that remembers obstacles after they are hidden by fog on [Generals.io](http://generals.io).
