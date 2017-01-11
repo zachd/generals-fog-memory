@@ -1,0 +1,20 @@
+
+{
+  "name": "Generals.io Crown/City Viewer",
+  "description": "Displays a crowns and cities after they are hidden",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": { 
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://generals.io/*", "http://eu.generals.io/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "manifest_version": 2
+}
