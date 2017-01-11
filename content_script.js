@@ -29,7 +29,7 @@ function turn(){
   // Show generals
   for (col of Object.keys(generals)){
     var gen = generals[col];
-    if (!gen.className.includes("general"))
+    if (!gen.className.includes("general") && !gen.className.includes("city"))
       gen.className += " general " + col;
   }
 
