@@ -1,7 +1,7 @@
 
 {
-  "name": "Generals.io Crown/City Viewer",
-  "description": "Displays a crowns and cities after they are hidden",
+  "name": "Generals.io Fog Memoriser",
+  "description": "Remembers obstacles after they are hidden by fog",
   "version": "1.0",
   "permissions": [
     "activeTab"
