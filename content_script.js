@@ -20,11 +20,9 @@ function turn(){
 
   // Search for cities
   var found_city = map.getElementsByClassName('city');
-  for (city of found_city){
-    var color = city.className.substr(0, city.className.indexOf(' '));
+  for (city of found_city)
     if(cities.indexOf(city) === -1)
       cities.push(city);
-  }
 
   // Show generals
   for (col of Object.keys(generals)){
@@ -36,14 +34,16 @@ function turn(){
   }
 
   // Show cities
-  for (city of cities){
+  for (city of cities)
     if (!city.className.includes("city"))
       city.className = city.className.replace('obstacle', 'city');
-  }
-
 }
 
 turnInterval = setInterval(function() {
   if (inGame())
     turn();
+  else {
+    generals = {};
+    cities = [];
+  }
 }, 500);
