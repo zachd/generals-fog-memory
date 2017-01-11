@@ -40,7 +40,7 @@ function turn(){
   // Show mountains
   for (mtn of mountains)
     if (!mtn.className.includes("mountain"))
-      mtn.className = mtn.className.replace('obstacle', 'mountain');
+      mtn.className = mtn.className.replace('fog obstacle', 'mountain');
 }
 
 turnInterval = setInterval(function() {
