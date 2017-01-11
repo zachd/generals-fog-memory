@@ -29,7 +29,9 @@ function turn(){
   // Show generals
   for (col of Object.keys(generals)){
     var gen = generals[col];
-    if (!gen.className.includes("general") && !gen.className.includes("city"))
+    if (!gen.className.includes("general") 
+        && !gen.className.includes("city") 
+        && cities.indexOf(gen) === -1)
       gen.className += " general " + col;
   }
 
@@ -42,7 +44,6 @@ function turn(){
 }
 
 turnInterval = setInterval(function() {
-  if (inGame()){
+  if (inGame())
     turn();
-  }
 }, 500);
